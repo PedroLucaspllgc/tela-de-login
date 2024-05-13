@@ -16,6 +16,7 @@ class Registro(App):
       senha = TextInput(text='Senha', size_hint=(None, None), size=(450, 50), pos_hint={'x': 0.27, 'y': 0.3})
       
       btn2 = Button(text='Registrar', size_hint=(None, None), size=(450, 50), pos_hint={'x': 0.27, 'y': 0.2}, background_color=get_color_from_hex('#D1D1D1'))
+      btn1 = Button(text='Login', size_hint=(None, None), size=(450, 50), pos_hint={'x': 0.27, 'y': 0.1}, background_color=get_color_from_hex('#D1D1D1'))
       
       layout_float.add_widget(email)
       layout_float.add_widget(senha)
