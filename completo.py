@@ -14,8 +14,8 @@ class Login(Screen):
         
         imagem = AsyncImage(source='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4SdvpxJlSY1IUWJJ2oFlipGY9dqmV7BCiYQ&s', pos_hint={'x': 0, 'y': 0.2})
         
-        email = TextInput(text='Email', size_hint=(None, None), size=(450, 50), pos_hint={'x': 0.27, 'y': 0.4})
-        senha = TextInput(text='Senha', size_hint=(None, None), size=(450, 50), pos_hint={'x': 0.27, 'y': 0.3})
+        email = TextInput(hint_text='Email', size_hint=(None, None), size=(450, 50), pos_hint={'x': 0.27, 'y': 0.4})
+        senha = TextInput(hint_text='Senha', size_hint=(None, None), size=(450, 50), pos_hint={'x': 0.27, 'y': 0.3})
         
         btn1 = Button(text='Login', size_hint=(None, None), size=(450, 50), pos_hint={'x': 0.27, 'y': 0.2}, background_color=get_color_from_hex('#D1D1D1'))
         btn2 = Button(text='Registrar', size_hint=(None, None), size=(450, 50), pos_hint={'x': 0.27, 'y': 0.1}, background_color=get_color_from_hex('#D1D1D1'), on_press=self.ir_para_registro)
@@ -40,8 +40,8 @@ class Registro(Screen):
         
         imagem = AsyncImage(source='/Users/aluno.sesipaulista/Downloads/oie.png', pos_hint={'x': 0, 'y': 0.2})
         
-        email = TextInput(text='Email', size_hint=(None, None), size=(450, 50), pos_hint={'x': 0.27, 'y': 0.4})
-        senha = TextInput(text='Senha', size_hint=(None, None), size=(450, 50), pos_hint={'x': 0.27, 'y': 0.3})
+        email = TextInput(hint_text='Email', size_hint=(None, None), size=(450, 50), pos_hint={'x': 0.27, 'y': 0.4})
+        senha = TextInput(hint_text='Senha', size_hint=(None, None), size=(450, 50), pos_hint={'x': 0.27, 'y': 0.3})
         
         btn2 = Button(text='Registrar', size_hint=(None, None), size=(450, 50), pos_hint={'x': 0.27, 'y': 0.2}, background_color=get_color_from_hex('#D1D1D1'), on_press=self.ir_para_login)
         
